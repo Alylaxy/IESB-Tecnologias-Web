@@ -1,0 +1,36 @@
+h1 { font-family:Arial;
+     font-size:26px;
+     text-align:center;
+     color:white;
+}
+
+
+h2 { font-family:Arial;
+     font-size:18px;
+     text-align:left;
+     color:orange;
+}
+
+p { font-family:Arial;
+    font-size:14px;
+    text-align:justify;
+    color:black;
+    text-indent:50px;
+}
+
+div{ width:1400px;
+     height:70px;
+     top:0px;
+     left:0px;
+     border:0px;
+     position:relative;
+     padding:1px;
+     background-color:yellowgreen;
+}
+     
+     
+     
+      
+
+     
+
