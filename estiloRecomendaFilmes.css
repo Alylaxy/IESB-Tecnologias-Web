@@ -6,7 +6,7 @@ h1 { font-family:Arial;
 
 
 h2 { font-family:Arial;
-     font-size:18px;
+     font-size:19px;
      text-align:left;
      color:orange;
 }
@@ -28,7 +28,38 @@ div{ width:1400px;
      background-color:yellowgreen;
 }
      
-     
+nav {
+     background-color: #4d26da;
+     height: 70px;
+     width: 1400px;
+   }
+   
+   ul {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     display: inline-block;
+   }
+   
+   li {
+     float: left;
+   }
+   
+   a {
+     display: block;
+     color: white;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+   }
+   
+   a:hover {
+     background-color: #111;
+   }
+   
+   a.active {
+     background-color: #4CAF50;
+   }    
      
       
 
