@@ -7,7 +7,7 @@
 
 >Um site de filmes em que o usuário consegue visualizar um catalogo de filmes e filtrá-los por gênero, ano de lançamento e nome do filme. Além disso, o usuário pode adicionar filmes ao seu catálogo pessoal, que é salvo no banco de dados. O usuário também pode avaliar os filmes que já assistiu e ver a avaliação média do filme, bem como deixar uma review. Os filmes serão puxados da API do The Movie Database (TMDb).
 
-[Estilo do projeto](https://www.figma.com/file/WSihmoxQ9cVJLt628HYz8d/Movie-Listing-Web-App-(Community)?node-id=401-6828&t=ZEf5XrNwznUkcn58-0)\
+[Estilo do projeto](https://www.figma.com/file/DwZpADkItSM0rMQbq1yLyZ/Cin%C3%A9filo?node-id=401%3A6827&t=OxABOaPrm3vLTXrQ-1)\
 Icons:npm install react-icons --save\
 styled:npm install --save styled-components
 
