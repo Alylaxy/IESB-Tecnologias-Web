@@ -20,6 +20,8 @@ Instalação do react (Visual Studio Code):
 
 Projeto:
     Estilo do projeto: https://www.figma.com/file/WSihmoxQ9cVJLt628HYz8d/Movie-Listing-Web-App-(Community)?node-id=401-6828&t=ZEf5XrNwznUkcn58-0
-    Icons:npm install react-icons --save
-    styled:npm install --save styled-components
+    Icons: npm install react-icons --save
+    styled: npm install --save styled-components
+    Routes: npm i react-router-dom
+    Carrosel: npm i react-multi-carousel
 

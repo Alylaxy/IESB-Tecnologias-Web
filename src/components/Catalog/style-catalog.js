@@ -6,7 +6,7 @@ export const Container = styled.div`
     flex-direction: row;
 `;
 
-export const Cartao = styled.div`
+export const Card = styled.div`
     width: 200px;
     height: 380px;
     border-radius: 5px;

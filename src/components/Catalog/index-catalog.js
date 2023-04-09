@@ -1,8 +1,6 @@
-import { Container, Cartao } from "./catalogo-style";
+import * as S from "./style-catalog";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
-import { useState } from "react";
 
 const Catalogo = ()=>{
     const responsive = {
@@ -27,14 +25,14 @@ const Catalogo = ()=>{
 
     return(
         <Carousel responsive={responsive}>
-            <Cartao/>
-            <Cartao/>
-            <Cartao/>
-            <Cartao/>
-            <Cartao/>
-            <Cartao/>
-            <Cartao/>
-            <Cartao/>
+            <S.Card/>
+            <S.Card/>
+            <S.Card/>
+            <S.Card/>
+            <S.Card/>
+            <S.Card/>
+            <S.Card/>
+            <S.Card/>
         </Carousel>
     )
 }

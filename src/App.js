@@ -1,18 +1,14 @@
 
-import Filtro from './components/filtro/filtro-busca';
-import NavBar from './components/nav-bar/nav-bar';
-import Catalogo from './components/catalogo/catalogo';
-import Destaque from './components/destaque/destaque';
-import { Container } from './App-style';
+import { AuthProvider } from './contexts/auth';
+import RoutesApp from './routes/routes';
+
+
 
 function App() {
   return (
-    <Container>
-      <NavBar />
-      <Filtro />
-      <Destaque />
-      <Catalogo/>
-    </Container>
+    <AuthProvider>
+      <RoutesApp />
+    </AuthProvider>
   );
 }
 

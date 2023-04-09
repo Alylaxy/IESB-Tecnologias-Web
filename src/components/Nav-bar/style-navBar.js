@@ -19,7 +19,7 @@ export const Ul = styled.ul`
     display: flex;
     flex-direction: row;
     padding: 12px 16px;
-    width: 150px;
+    width: 190px;
     height: 48px;
     justify-content: space-between;
     list-style-type: none;
