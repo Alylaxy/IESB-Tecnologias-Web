@@ -1,14 +1,15 @@
 import { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Signin } from "../pages/signin/index-signin";
-import { Signup } from "../pages/signup/index-signup";
+import { SignIn } from "../pages/signin/index-signin";
+import { SignUp } from "../pages/Signup/index-signup";
 import { Home } from "../pages/home/index-home";
 import useAuth from "../hooks/useAuth";
+import { Error } from "../pages/404/index-404";
 
 const Private = ({ Item }) => {
     const {signed} = useAuth();
     
-    return signed > 0 ? <Item /> : <Signin />;
+    return signed > 0 ? <Item /> : <Home />;
 };
 
 const RoutesApp = () => {
@@ -16,10 +17,11 @@ const RoutesApp = () => {
         <BrowserRouter>
             <Fragment>
                 <Routes>
-                    <Route exact path="/home" element={<Private Item={Home}/>} />
-                    <Route path="/" element={<Signin />} />
-                    <Route exact path="/signup" element={<Signup />} />
-                    <Route path="*" element={<Signin />} />
+                    <Route path="/" element={<Home />} />
+                    <Route exact path="/home" element={<Home/>}/>
+                    <Route exact path="/signin" element={<SignIn/>}/>
+                    <Route exact path="/signup" element={<SignUp />} />
+                    <Route path="*" element={<Error/>} />
                 </Routes>
             </Fragment>
         </BrowserRouter>

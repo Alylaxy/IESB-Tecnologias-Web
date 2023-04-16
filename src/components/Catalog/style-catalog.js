@@ -7,9 +7,61 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
-    width: 200px;
-    height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 8px 16px;
+    gap: 16px;
+
+    width: 210px;
+    height: 390px;
     border-radius: 5px;
     background: #000;
     margin-left: 8px;
+
+    background: rgba(32, 40, 62, 0.8);
+    backdrop-filter: blur(40px);
+
+    border-radius: 12px;
+`;
+
+export const Favorite = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 4px;
+
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    left: 16px;
+    top: 18px;
+
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(4px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 8px;
+`;
+
+export const Strong = styled.strong`
+    cursor: pointer;
+
+    a{
+        text-decoration: none;
+        color: #FFDF00;
+    }
+`;
+
+export const Img = styled.img`
+    width: 210;
+    height: 390;
+    border-radius: 12px;
+`;
+
+export const Name = styled.h3`
+    color: white;
+    align-self: center;
+    margin: 0px;
 `;

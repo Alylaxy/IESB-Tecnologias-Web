@@ -13,6 +13,7 @@ export const Container = styled.div`
     top: 0px;
 
     backdrop-filter: blur(20px);
+    background: rgba(18, 24, 41, 0.8);
 `;
 
 export const Ul = styled.ul`
@@ -32,4 +33,17 @@ export const Li = styled.li`
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.02em;
+`;
+
+export const Strong = styled.strong`
+    cursor: pointer;
+
+    a{
+        text-decoration: none;
+    }
+`;
+
+export const Img = styled.img`
+    width: 90px;
+    height: 60px;
 `;
