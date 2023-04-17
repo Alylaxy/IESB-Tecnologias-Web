@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import * as S from "./style-register";
-import Input from "../Input/index-input";
-import Button from '../Button/index-button';
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from '../../hooks/useAuth';
 

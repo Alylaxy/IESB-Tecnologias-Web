@@ -2,8 +2,6 @@ import * as S from "./style-navBar"
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import logo from "./logo/cinefilo-logo.png"
-import { useRef } from 'react';
-import { useState } from "react";
 
 const NavBar = ()=>{
     const { signout } = useAuth();

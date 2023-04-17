@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import * as S from "./style-login";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import Input from "../Input/index-input";
-import Button from "../Button/index-button";
 import { AiOutlineMail } from 'react-icons/ai';
 import { RiLockPasswordLine } from 'react-icons/ri';
 
@@ -57,16 +55,16 @@ export const Login = () => {
           />
         </S.ContainerInput>
 
-          <S.LabelError>{error}</S.LabelError>
-          <S.Button onClick={handleLogin} >
-            <S.TextButton>Entrar</S.TextButton>
-          </S.Button>
-          <S.LabelSignup>
-            Não tem uma conta?
-            <S.Strong>
-              <Link to="/signup">&nbsp; Registre-se</Link>
-            </S.Strong>
-          </S.LabelSignup>
+        <S.LabelError>{error}</S.LabelError>
+        <S.Button onClick={handleLogin} >
+          <S.TextButton>Entrar</S.TextButton>
+        </S.Button>
+        <S.LabelSignup>
+          Não tem uma conta?
+          <S.Strong>
+            <Link to="/signup">&nbsp; Registre-se</Link>
+          </S.Strong>
+        </S.LabelSignup>
       </S.Container>
   )
 }

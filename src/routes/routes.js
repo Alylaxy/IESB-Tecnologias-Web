@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { SignIn } from "../pages/signin/index-signin";
+import { SignUp } from "../pages/Signup/index-signup"
 import { Home } from "../pages/home/index-home";
 import useAuth from "../hooks/useAuth";
 import { Error } from "../pages/404/index-404";
@@ -19,6 +20,7 @@ const RoutesApp = () => {
                     <Route path="/" element={<Home />} />
                     <Route exact path="/home" element={<Home/>}/>
                     <Route exact path="/signin" element={<SignIn/>}/>
+                    <Route exact path="/signup" element={<SignUp/>} />
                     <Route path="*" element={<Error/>} />
                 </Routes>
             </Fragment>
