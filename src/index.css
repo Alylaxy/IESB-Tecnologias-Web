@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --nav-size:60px;
+  --border: 1px solid #474a4d;
+  --border-radius:8px;
+  --speed: 500ms;
+}
+
+body{
+  background: #121829;
+}
+
+/* Oculta a barra de rolagem padrão do navegador */
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+/* Estiliza a barra de rolagem */

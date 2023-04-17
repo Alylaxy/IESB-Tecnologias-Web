@@ -5,10 +5,14 @@ import { useEffect } from "react";
 
 const Selected = ({title, imageUrl, description})=>{
     
-    useEffect(() => {console.log(typeof(title))},[imageUrl])
+    useEffect(() => {},[imageUrl])
 
     return(
-        <S.Card>
+        <S.Container>
+            <S.Obeject1 />
+            <S.Obeject2 />
+            <S.Obeject4 />
+            <S.Obeject6 />
             <S.Favorite>
                 <S.Strong>
                     <Link>
@@ -16,12 +20,12 @@ const Selected = ({title, imageUrl, description})=>{
                     </Link>
                 </S.Strong>
             </S.Favorite>
-            <S.Img width="210" height="390" src={imageUrl}></S.Img>
+            <S.Img width="240" height="370" src={imageUrl}></S.Img>
             <S.Content>
                 <S.Name>{title}</S.Name>
                 <S.Description>{description}</S.Description>
             </S.Content>
-        </S.Card>
+        </S.Container>
     )
     
 }

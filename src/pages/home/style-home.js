@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 export const All = styled.div`
-  background: #121829;
+  height: 100vh;
+  width: 100%;
 `;
 
 export const Container = styled.div`
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   width: 1080px;
   margin: 0 auto;
-  background: #121829;
+`;
+
+export const ContainerContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 `;

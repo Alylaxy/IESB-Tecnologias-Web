@@ -1,10 +1,9 @@
 import * as S from "./style-navBar"
-import { SiSinglestore } from 'react-icons/si';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import { Button } from "../Filter/style-filter";
-import { UseEffect } from "react";
 import logo from "./logo/cinefilo-logo.png"
+import { useRef } from 'react';
+import { useState } from "react";
 
 const NavBar = ()=>{
     const { signout } = useAuth();
@@ -27,9 +26,9 @@ const NavBar = ()=>{
         }
         {location.pathname !== ("/signin") && location.pathname !== ("/signup") ? (
             <S.Ul>
-                <S.Li><Button onClick={() => navigate("/signin")}>&nbsp;Entrar</Button></S.Li>
-                <S.Li><Button onClick={() => navigate("/signup")}>&nbsp;Registrar</Button></S.Li>
-                <S.Li><Button onClick={() => [signout(), navigate("/signin")]}>&nbsp;Sair</Button></S.Li>
+                <S.Li><S.Span onClick={() => navigate("/signin")}>&nbsp;Entrar</S.Span></S.Li>
+                <S.Li><S.Span onClick={() => navigate("/signup")}>&nbsp;Registrar</S.Span></S.Li>
+                <S.Li><S.Span onClick={() => [signout(), navigate("/signin")]}>&nbsp;Sair</S.Span></S.Li>
             </S.Ul>)
             : null
         }

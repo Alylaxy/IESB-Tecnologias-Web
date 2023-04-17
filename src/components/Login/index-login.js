@@ -4,6 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import Input from "../Input/index-input";
 import Button from "../Button/index-button";
+import { AiOutlineMail } from 'react-icons/ai';
+import { RiLockPasswordLine } from 'react-icons/ri';
+
 
 export const Login = () => {
   const { signin } = useAuth();
@@ -34,31 +37,36 @@ export const Login = () => {
 
   return (
       <S.Container>
-        <S.Label>SISTEMA DE LOGIN</S.Label>
-        <S.Content>
-          <Input 
+        <S.Label>Entrar</S.Label>
+        <S.ContainerInput>
+          <AiOutlineMail color="white" />
+          <S.Input
             type="email" 
             placeholder="Digite seu E-mail"
             value={email}
             onChange={(e) => [setEmail(e.target.value), setError("")]}
             />
+        </S.ContainerInput>
+        <S.ContainerInput>
+          <RiLockPasswordLine color="white" />
+          <S.Input 
+            type="password" 
+            placeholder="Digite sua Senha"
+            value={senha}
+            onChange={(e) => [setSenha(e.target.value), setError("")]}
+          />
+        </S.ContainerInput>
 
-            <Input 
-              type="password" 
-              placeholder="Digite sua Senha"
-              value={senha}
-              onChange={(e) => [setSenha(e.target.value), setError("")]}
-            />
-
-            <S.LabelError>{error}</S.LabelError>
-            <Button Text="Entrar" onClick={handleLogin} />
-            <S.LabelSignup>
-              Não tem uma conta?
-              <S.Strong>
-                <Link to="/signup">&nbsp;Registre-se</Link>
-              </S.Strong>
-            </S.LabelSignup>
-        </S.Content>
+          <S.LabelError>{error}</S.LabelError>
+          <S.Button onClick={handleLogin} >
+            <S.TextButton>Entrar</S.TextButton>
+          </S.Button>
+          <S.LabelSignup>
+            Não tem uma conta?
+            <S.Strong>
+              <Link to="/signup">&nbsp; Registre-se</Link>
+            </S.Strong>
+          </S.LabelSignup>
       </S.Container>
   )
 }

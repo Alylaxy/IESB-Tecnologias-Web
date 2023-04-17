@@ -37,35 +37,41 @@ export const Register = () => {
 
   return (
     <S.Container>
-      <S.Label>SISTEMA DE LOGIN</S.Label>
-      <S.Content>
-        <Input 
-          type="email"
-          placeholder="Digite seu E-mail"
-          value={email}
-          onChange={(e) => [setEmail(e.target.value), setError("")]}
-        />
-        <Input 
-          type="email"
-          placeholder="Confirme seu E-mail"
-          value={emailConf}
-          onChange={(e) => [setEmailConf(e.target.value), setError("")]}
-        />
-        <Input 
-          type="password"
-          placeholder="Digite sua Senha"
-          value={senha}
-          onChange={(e) => [setSenha(e.target.value), setError("")]}
-        />
+        <S.Label>Registro</S.Label>
+        <S.ContainerInput>
+          <S.Input
+            type="email"
+            placeholder="Digite seu E-mail"
+            value={email}
+            onChange={(e) => [setEmail(e.target.value), setError("")]}
+          />
+        </S.ContainerInput>
+        <S.ContainerInput>
+          <S.Input
+            type="email"
+            placeholder="Confirme seu E-mail"
+            value={emailConf}
+            onChange={(e) => [setEmailConf(e.target.value), setError("")]}
+          />
+        </S.ContainerInput>
+        <S.ContainerInput>
+          <S.Input 
+            type="password"
+            placeholder="Digite sua Senha"
+            value={senha}
+            onChange={(e) => [setSenha(e.target.value), setError("")]}
+          />
+        </S.ContainerInput>
         <S.LabelError>{error}</S.LabelError>
-        <Button Text="Inscrever-se" onClick={handleSignup} />
+        <S.Button Text="Inscrever-se" onClick={handleSignup} >
+          <S.TextButton>Inscrever-se</S.TextButton>
+        </S.Button>
         <S.LabelSignin>
           Já tem uma conta?
           <S.Strong>
-            <Link to="/signin">Entre</Link>
+            <Link to="/signin"> Entre</Link>
           </S.Strong>
         </S.LabelSignin>
-      </S.Content>
     </S.Container>
   );
 };
