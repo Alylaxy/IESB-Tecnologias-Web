@@ -8,13 +8,17 @@ export const Container = styled.div`
     padding: 0px 0px;
 
     flex: 1;
-    height: 52px;
+    min-height: 104px;
     left: 0px;
     top: 0px;
 
     backdrop-filter: blur(20px);
     background: rgba(18, 24, 41, 0.8);
 `;
+
+export const Container2 = styled.div`
+
+`
 
 export const Ul = styled.ul`
     display: flex;

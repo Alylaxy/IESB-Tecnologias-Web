@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import * as S from "./style-register";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from '../../hooks/useAuth';
+import { AiOutlineMail } from 'react-icons/ai';
+import { RiLockPasswordLine } from 'react-icons/ri';
 
 export const Register = () => {
 
@@ -37,6 +39,7 @@ export const Register = () => {
     <S.Container>
         <S.Label>Registro</S.Label>
         <S.ContainerInput>
+          <AiOutlineMail color="white"/>
           <S.Input
             type="email"
             placeholder="Digite seu E-mail"
@@ -45,6 +48,7 @@ export const Register = () => {
           />
         </S.ContainerInput>
         <S.ContainerInput>
+          <AiOutlineMail color="white"/>
           <S.Input
             type="email"
             placeholder="Confirme seu E-mail"
@@ -53,6 +57,7 @@ export const Register = () => {
           />
         </S.ContainerInput>
         <S.ContainerInput>
+          <RiLockPasswordLine color="white"/>
           <S.Input 
             type="password"
             placeholder="Digite sua Senha"

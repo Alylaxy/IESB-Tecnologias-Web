@@ -54,7 +54,7 @@ export const Input = styled.input`
     padding: 0px;
 
     width: auto;
-    height: auto;
+    height: 48px;
 
     flex: none;
     order: 1;
@@ -93,6 +93,7 @@ export const ContainerInput = styled.div`
 `;
 
 export const Button = styled.button`
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;

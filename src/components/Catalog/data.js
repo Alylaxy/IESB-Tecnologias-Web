@@ -9,6 +9,7 @@ import urso from "./Filmes/ursocracudo.jpg"
 
 const Data = [
     {
+        id:1, 
         title: "Adam Driver 65",
         imageUrl: Adam65,
         description: "65 é a história de um cruzador espacial 'futurista' que cai em um planeta distante e apenas o capitão e uma " 
@@ -19,12 +20,14 @@ const Data = [
         genre: ["Ação", "Ficção científica"]
     },
     {
+        id:2, 
         title: "Dungeons & Dragons",
         imageUrl: ded,
         description: "Um ladrão e um bando de aventureiros embarcam em uma jornada épica para recuperar uma relíquia.",
         genre: ["Aventura", "Fantasia"]
     },
     {
+        id:3, 
         title: "O exorcista do Papa",
         imageUrl: exorcista,
         description: "O padre Gabriele Amorth, exorcista do Vaticano, luta contra Satanás e demônios possuidores de inocentes. "
@@ -32,6 +35,7 @@ const Data = [
         genre: ["Terror"]
     },
     {
+        id:4, 
         title: "Jhon Wick 4",
         imageUrl: jhonwick,
         description: "Com o preço por sua cabeça cada vez maior, o lendário assassino de aluguel John Wick leva sua luta contra o "
@@ -39,6 +43,7 @@ const Data = [
         genre: ["Ação"]
     },
     {
+        id:5, 
         title: "Mario",
         imageUrl: mario,
         description: "Mario é um encanador junto com seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, "
@@ -46,6 +51,7 @@ const Data = [
         genre: ["Aventura", "Comédia"]
     },
     {
+        id:6, 
         title: "Panico 6",
         imageUrl: panico,
         description: "Sam, Tara, Chad e Mindy, os quatro sobreviventes do massacre realizado pelo Ghostface, decidem deixar Woodsboro para trás em busca "
@@ -53,6 +59,7 @@ const Data = [
         genre: ["Terror", "Mistério"]
     },
     {
+        id:7, 
         title: "Suzume",
         imageUrl: suzume,
         description: "Suzume conta a história duma adolescente de 17 anos e a sua jornada através de um Japão devastado por várias calamidades e onde "
@@ -60,6 +67,7 @@ const Data = [
         genre: ["Aventura", "Animação"]
     },
     {
+        id:8, 
         title: "O urso do pó branco",
         imageUrl: urso,
         description: "Depois de uma operação de contrabando de drogas fracassada, um urso negro ingere uma grande quantidade de cocaína "

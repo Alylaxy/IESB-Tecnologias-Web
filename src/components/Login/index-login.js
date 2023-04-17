@@ -15,10 +15,7 @@ export const Login = () => {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    console.log(!email + ":" + !senha);
-
     if(!email || !senha) {
-      console.log("entrou no if");
       setError("Preencha todos os campos");
       return;
     }

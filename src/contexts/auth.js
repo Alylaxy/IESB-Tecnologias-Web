@@ -23,10 +23,6 @@ export const AuthProvider = ({ children }) => {
 
         const hasUser = usersStorage?.filter((user) => user.email === email);
 
-        console.log(email, password)
-        console.log(hasUser[0].email, hasUser[0].password)
-        console.log(hasUser)
-
         if (hasUser) {
             if(hasUser[0].email === email && hasUser[0].password === password){
                 const token = Math.random().toString(36).substring(2);
