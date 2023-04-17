@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { SignIn } from "../pages/signin/index-signin";
-import { SignUp } from "../pages/Signup/index-signup"
+import { SignUp } from "../pages/signup/index-signup";
 import { Home } from "../pages/home/index-home";
 import useAuth from "../hooks/useAuth";
 import { Error } from "../pages/404/index-404";
