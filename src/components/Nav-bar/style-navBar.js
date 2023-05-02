@@ -47,7 +47,8 @@ export const Strong = styled.strong`
 `;
 
 export const Img = styled.img`
-    
+    width: 52px;
+    height: 52px;
 `;
 
 export const Span = styled.span`
