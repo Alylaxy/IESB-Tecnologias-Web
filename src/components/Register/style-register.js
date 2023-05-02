@@ -7,7 +7,6 @@ export const Container = styled.div`
     padding: 0px;
     gap: 40px;
 
-    position: absolute;
     width: 486px;
     height: 360px;
     left: 732px;
