@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import * as S from "./style-login";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineUser } from 'react-icons/ai';
 import { RiLockPasswordLine } from 'react-icons/ri';
 
 
@@ -34,7 +34,7 @@ export const Login = () => {
       <S.Container>
         <S.Label>Entrar</S.Label>
         <S.ContainerInput>
-          <AiOutlineMail color="white" />
+          <AiOutlineUser color="white" />
           <S.Input
             type="email" 
             placeholder="Digite seu E-mail"
