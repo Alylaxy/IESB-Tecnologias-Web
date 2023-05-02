@@ -17,23 +17,15 @@ export const Label = styled.label`
     width: 486px;
     height: 80px;
 
-    /* Heading/H1 */
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
     line-height: 80px;
-    /* identical to box height, or 125% */
 
     letter-spacing: -0.02em;
 
-    /* Grey/100 */
-
     color: #C3C8D4;
-
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -65,8 +57,6 @@ export const Input = styled.input`
 export const ContainerInput = styled.div`
     box-sizing: border-box;
 
-    /* Auto layout */
-
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -76,15 +66,10 @@ export const ContainerInput = styled.div`
     width: 386px;
     height: 54px;
 
-    /* Black/10 */
-
     background: rgba(0, 0, 0, 0.1);
-    /* Grey/700 */
 
     border: 1px solid #323B54;
     border-radius: 12px;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -103,15 +88,10 @@ export const Button = styled.button`
     width: 386px;
     height: 56px;
 
-    /* Primary/400 */
-
     background: #1E90FF;
-    /* Primary/400 */
 
     border: 2px solid #1E90FF;
     border-radius: 12px;
-
-    /* Inside auto layout */
 
     flex: none;
     order: 0;
@@ -119,13 +99,8 @@ export const Button = styled.button`
 `;
 
 export const TextButton = styled.a`
-    /* Search */
 
-
-    width: 100px;
     height: 24px;
-
-    /* Body/Regular */
 
     font-family: 'Poppins';
     font-style: normal;
